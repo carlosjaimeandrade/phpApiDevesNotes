@@ -3,8 +3,14 @@ require('../config.php');
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
 if($method === 'get'){
-
+    // esse codigo abaixo reproz o que comentei
     $id = filter_input(INPUT_GET, 'id');
+
+/*     if(isset($_GET['id'])){
+        $id = $_GET['id'];
+    }else{
+        $id = null;
+    } */
 
     if($id){
 
