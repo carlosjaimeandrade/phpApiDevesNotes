@@ -8,7 +8,7 @@ if($method === 'get'){
     if($sql->rowCount()>0){
         $data = $sql->fetchAll(PDO::FETCH_ASSOC);
         foreach($data as $item){
-            array_push( $array['result'],['id' => $item['id'],'title' => $item['title']]);
+            array_push( $array['result'],['id' => $item['id'],'title' => $item['title'],'body' => $item['body']]);
 
 /*             $array['result'][] = [
                 'id' => $item['id'],
