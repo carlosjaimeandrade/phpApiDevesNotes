@@ -1,5 +1,7 @@
 <?php
 require('../config.php');
+
+
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
 if($method === 'get'){
